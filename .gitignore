@@ -1,0 +1,47 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build / installer output
+build/
+dist/
+*.spec
+installer/Output/
+
+# Runtime folders (may contain payroll or employee data)
+logs/
+output*/
+sample_files/
+
+# Data files — never commit real payroll/employee data
+*.xlsx
+*.xlsm
+*.xlsb
+*.xls
+*.csv
+*.pdf
+*.log
+~$*
+
+# Synthetic test fixtures only (fake data)
+!tests/fixtures/
+!tests/fixtures/**
+
+# Secrets / credentials / signing certificates
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets*.json
+credentials*.json
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
